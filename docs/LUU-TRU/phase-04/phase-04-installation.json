@@ -1,0 +1,132 @@
+﻿[
+    {
+        "Relative":  "backend\\.env.example",
+        "Before":  "791A819423B2822449F0B1C394D52BE8C993CC5DEA9A2915E7D75E1C37262521",
+        "After":  "A0D44711083E9E18CCE04A795805A5BCCD80B2F937520DBEC58E59FC406EDC5C"
+    },
+    {
+        "Relative":  "backend\\.gitignore",
+        "Before":  "723713525401098C3B78D91963EED71D016AEDD1B73F597C7A1A8C97BFC93878",
+        "After":  "1B5B5ED3983D32602BDCC048B4A4E565D03BDDFA6020F10A2C182058396D9EB6"
+    },
+    {
+        "Relative":  "backend\\README.md",
+        "Before":  "4F1634819223796D17BE6B5354304884C5C9967C279D25B6800890A27B9F4FAB",
+        "After":  "64F91F328B397A23687B7FA857F63D4C6EAB85035E82C2A36549194C3BD36F78"
+    },
+    {
+        "Relative":  "backend\\requirements-lock.txt",
+        "Before":  "5F170A956A53BE6F72076E0264F2491B614EB07EA751248D0B4B3AD92D6D0E72",
+        "After":  "5979275D7FEE75356E38326E2A1B253ED84AB95CBF98308D3663EE0954AEC196"
+    },
+    {
+        "Relative":  "backend\\requirements.txt",
+        "Before":  "3F89F212DBAFBFAC8E562044A7D15DED85446542F1FB0A20F5EED819D3B5CF40",
+        "After":  "AFF29051E70440BB5427AA8FB7D8003E3F06131457DAA218ECC05A6FDF8A8ED3"
+    },
+    {
+        "Relative":  "backend\\app\\config.py",
+        "Before":  "4D1CB778FCCEECD41C03169E9D52FB74210A1C4684D3A22E2F1DE3A61B24AEE6",
+        "After":  "3148B59B66012F1BE4594517A948002D8BB0ED1A49626DDAD4CCDDEA17AFC442"
+    },
+    {
+        "Relative":  "backend\\app\\database.py",
+        "Before":  "DE87F68AD0B6AB2F07931BF85D3D3375A6F1C76C0CC1D6E9A92C52CF66E4F584",
+        "After":  "B1170829BE0C938766C775C4FC7586780CBD9223B1A40A895ABDDE3A5321D35E"
+    },
+    {
+        "Relative":  "backend\\app\\main.py",
+        "Before":  "263FB346CDF819A214357AB18D30106920F94D1612EFE8E1BC63CE8D8694B033",
+        "After":  "EDA50B2BDCCE867D29BBE578ED79641E5B3C07A6CE5CB34DD27D805BC431798E"
+    },
+    {
+        "Relative":  "backend\\app\\routers\\parking.py",
+        "Before":  "A00EAC29E5367E72C2CD46330D8991AEFB41FE7FD153668FCFD0C84428943BF3",
+        "After":  "74722BD4C0E4A5DAC2D8AF7CB70ED5170FB3DEE7A381E2C0A1E10581FB41723B"
+    },
+    {
+        "Relative":  "backend\\app\\routers\\realtime_gate.py",
+        "Before":  null,
+        "After":  "8DF23D45827464DDC19C4A81D8B8612CB4D6AA0EA9979BCA7DD8B6D2783B54A4"
+    },
+    {
+        "Relative":  "backend\\app\\schemas\\__init__.py",
+        "Before":  "B70BC3AA9B98AB8AD1DA123525A473F96C9496C7E057E48D7855BAABFF1E2ECA",
+        "After":  "6AE858E5C43BF3B81AE998FB4613C014C1D1F467FD8CDC71B6D646DF8C184108"
+    },
+    {
+        "Relative":  "backend\\app\\services\\gate.py",
+        "Before":  null,
+        "After":  "736702B87D10B397E5A0645E71B4DEACC1E692228BFD6430B077736DD7919513"
+    },
+    {
+        "Relative":  "backend\\app\\services\\mqtt_subscriber.py",
+        "Before":  "DA999DB490E09D44BBE51927249938CCF0F3BC5FE16D4D756647F57E1DFC9F90",
+        "After":  "8C54E3FED41EA09CB44CA8303E9976024F2C8027D5414E7A4869ABD929564BF5"
+    },
+    {
+        "Relative":  "backend\\app\\services\\parking.py",
+        "Before":  "3A89D482C8BB3952BDF8F470C1CA9C70A3C339AD6284DC0C99D441A96F967FC7",
+        "After":  "ABD916146222F886DAE045DCD86172B6F4CB918825829F951DA6DDAED350859B"
+    },
+    {
+        "Relative":  "backend\\app\\services\\realtime.py",
+        "Before":  null,
+        "After":  "C053BF00D6DE601ED485FBB1E91F8CB19EA69A34CB18E72F21E04F62F3778C5E"
+    },
+    {
+        "Relative":  "backend\\tests\\test_core.py",
+        "Before":  "96CAEE36934495F110597652A3001F34D1FBA3B76E9D02D762CCFD496D396D4D",
+        "After":  "F361CE54573F7EDA0D17D90EA9717B3F9155CB034196D0586369EE31CCDD9D98"
+    },
+    {
+        "Relative":  "backend\\tests\\test_mqtt.py",
+        "Before":  "94F83D1697D3486A10B2E0EED5A1A46652CC1389F0DE8317408E336F68A67E69",
+        "After":  "1CC48BBC4F8482AE216C032943768DCCFEDC47EAE8B637D7F96F3F4E8127F23A"
+    },
+    {
+        "Relative":  "backend\\tests\\test_realtime_gate.py",
+        "Before":  null,
+        "After":  "7259B64BDAF3945997AE88AC8782E2A5DF6A6D871C00976EF24495E6ED00D59F"
+    },
+    {
+        "Relative":  "backend\\tests\\fixtures\\schema-v1.sql",
+        "Before":  null,
+        "After":  "289750C3CEFB0C79CBF1918C47B5817E3AA15C5D433D035452C822A8E95AFAAA"
+    },
+    {
+        "Relative":  "backend\\tools\\watch_ws.py",
+        "Before":  null,
+        "After":  "37AAADE3EDA810676F8119898D7E397CC7EFCE90D62A482BA19A2E38B2D1DA66"
+    },
+    {
+        "Relative":  "docs\\phase-04-http-ws-smoke.json",
+        "Before":  null,
+        "After":  "DDB1CC626325B7696613F17E782B8FB3F1E06C06396707A642A3C8906EA6493E"
+    },
+    {
+        "Relative":  "docs\\phase-04-http-ws-smoke.log",
+        "Before":  null,
+        "After":  "87F9E97DCAA6FD1DAAD8EAABCC31A7C2F846068F08C9888D5F167904E3AEEDFC"
+    },
+    {
+        "Relative":  "docs\\phase-04-manual-test.md",
+        "Before":  null,
+        "After":  "790F3189F234BA1269E46EE63346D4A11C77C41396BEADBB2219F3B2CEE4995D"
+    },
+    {
+        "Relative":  "docs\\phase-04-pytest.log",
+        "Before":  null,
+        "After":  "93665D278AAC93F2A074A3F9C0C6381279355AAA01A509220DAF67BFE3A1E94D"
+    },
+    {
+        "Relative":  "docs\\phase-04-pytest.xml",
+        "Before":  null,
+        "After":  "37475B20D8F98FC654478D44607722251DCC6B6AF6F76D3E502D086E0A365837"
+    },
+    {
+        "Relative":  "docs\\phase-04-realtime-gate-report.md",
+        "Before":  null,
+        "After":  "41FD325B74F01A2864BAC1F003DCD1837107F2B308F2852C8016B845A4F80F8E"
+    }
+]

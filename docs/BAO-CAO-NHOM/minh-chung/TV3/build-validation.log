@@ -1,0 +1,93 @@
+
+> smart-parking-dashboard-mvp@1.0.0 build
+> vite build
+
+vite v6.4.4 building for production...
+transforming...
+✓ 2315 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                                     0.37 kB │ gzip:   0.27 kB
+dist/assets/bevel-CM_0IeFw.wasm                                   123.56 kB │ gzip:  57.76 kB
+dist/assets/boolean-_TCiLKux.wasm                                 162.20 kB │ gzip:  61.74 kB
+dist/assets/physics-CLy2MFto.wasm                               1,569.59 kB │ gzip: 586.74 kB
+dist/assets/index-DX_Szo5z.css                                      5.97 kB │ gzip:   1.88 kB
+dist/assets/runtime-hair-JWEUOSZQ-C4t9fJfe.js                       0.15 kB │ gzip:   0.14 kB
+dist/assets/runtime-chunk-CVUJ3GMH-z0EVCgfT.js                      0.15 kB │ gzip:   0.14 kB
+dist/assets/runtime-cloners-KG6N3BXV-B0WL2uoM.js                    0.18 kB │ gzip:   0.15 kB
+dist/assets/runtime-shapeBlends-2QP6U25O-D0ZqGwZj.js                0.26 kB │ gzip:   0.20 kB
+dist/assets/runtime-chunk-UIRA2CWJ-BOAtg-Ug.js                      0.28 kB │ gzip:   0.18 kB
+dist/assets/runtime-chunk-NTUTXO7Q-Q3NxNv35.js                      0.32 kB │ gzip:   0.19 kB
+dist/assets/runtime-chunk-NYOF3PNR-D8HXUFWg.js                      0.36 kB │ gzip:   0.27 kB
+dist/assets/runtime-chunk-GFTBNL2W-DO2k0AbJ.js                      0.42 kB │ gzip:   0.29 kB
+dist/assets/runtime-vectorShapes-RYMOTNNM-BUxvOhM5.js               0.45 kB │ gzip:   0.28 kB
+dist/assets/runtime-chunk-TXYV34UR-Da_9g1xb.js                      0.52 kB │ gzip:   0.28 kB
+dist/assets/runtime-Perfs-KMJFDYHU-DBMpd1v-.js                      0.84 kB │ gzip:   0.41 kB
+dist/assets/runtime-sceneTransition-55XY2MUR-OiIcrfwS.js            1.35 kB │ gzip:   0.61 kB
+dist/assets/runtime-chunk-WWCXHYAF-B5MX-aiI.js                      1.39 kB │ gzip:   0.61 kB
+dist/assets/runtime-mergeStaticGeometries-4TLAKDAM-BUEWda_s.js      2.19 kB │ gzip:   1.05 kB
+dist/assets/runtime-resize-72IGTMAR-0Q-rymsw.js                     2.56 kB │ gzip:   1.00 kB
+dist/assets/runtime-fxBloom-4HSWHGBL-BEVcCOmD.js                    2.99 kB │ gzip:   1.25 kB
+dist/assets/runtime-audio-P56XBVSL-B6gn2fOM.js                      3.29 kB │ gzip:   1.01 kB
+dist/assets/runtime-components-SNSQPVIU-C9_0mBC1.js                 3.94 kB │ gzip:   1.67 kB
+dist/assets/runtime-video-U5RS7HHJ-D12IZY31.js                      4.09 kB │ gzip:   1.36 kB
+dist/assets/bevel-DxLk3y3d.js                                       4.27 kB │ gzip:   1.60 kB
+dist/assets/runtime-chunk-CJAKEGOH-CfnDmzY8.js                      4.74 kB │ gzip:   1.63 kB
+dist/assets/runtime-fxDepthOfField-NGC6SATF-DQ5FKL-9.js             5.38 kB │ gzip:   1.95 kB
+dist/assets/runtime-noise-PPEDFDYO-DHogSois.js                      5.81 kB │ gzip:   1.45 kB
+dist/assets/runtime-pixelation-MVG6XLP3-6G5SbsP8.js                 5.94 kB │ gzip:   1.50 kB
+dist/assets/runtime-mouseHover-UC4V64KR-nInmwmlO.js                 6.01 kB │ gzip:   1.55 kB
+dist/assets/boolean-CI6vqShW.js                                     6.08 kB │ gzip:   1.92 kB
+dist/assets/runtime-chromaticAberration-T7XDMEVF-X5WIN4KS.js        6.11 kB │ gzip:   1.54 kB
+dist/assets/runtime-conditional-SK6JLPTN-CjxMEzFH.js                6.15 kB │ gzip:   1.57 kB
+dist/assets/runtime-brightnessContrast-PGPHKJZX-CY9Jtm4J.js         6.29 kB │ gzip:   1.49 kB
+dist/assets/runtime-hueSaturation-7HSYL7M5-CvWP8Ff4.js              6.45 kB │ gzip:   1.63 kB
+dist/assets/runtime-vignette-KYH2SCOD-BMmAvxk9.js                   6.81 kB │ gzip:   1.71 kB
+dist/assets/runtime-DRACOLoader-GLMRFFK2-CtEpb4uu.js                6.89 kB │ gzip:   2.94 kB
+dist/assets/runtime-createDestroy-7JLV5ONP-D5Ff29mO.js              8.14 kB │ gzip:   2.42 kB
+dist/assets/runtime-miscActions-YT3JTCAS-RMNag9E_.js                8.85 kB │ gzip:   3.20 kB
+dist/assets/runtime-scroll-M6OD2EFE-BA2yuQj8.js                     9.08 kB │ gzip:   2.35 kB
+dist/assets/runtime-text-4LC7VC5F-Bpx0n6Ot.js                      10.22 kB │ gzip:   4.23 kB
+dist/assets/runtime-ui2d-ACT52A4B-3z89QKV_.js                      10.39 kB │ gzip:   3.28 kB
+dist/assets/runtime-transitions-CTFNET4C-COacgxPm.js               10.48 kB │ gzip:   2.99 kB
+dist/assets/runtime-apiServices-J4QEEJ2S-97W88zuc.js               10.86 kB │ gzip:   3.23 kB
+dist/assets/runtime-variables-DJUQPZDB-ClePGSBO.js                 10.94 kB │ gzip:   3.10 kB
+dist/assets/runtime-tracking-ZRIG4OD6-DSMMMceP.js                  13.20 kB │ gzip:   3.67 kB
+dist/assets/runtime-paths-4EGJEH3U-BZrvAcrs.js                     13.49 kB │ gzip:   5.39 kB
+dist/assets/runtime-aiAssistant-5ECVEZLI-Df-Id4H0.js               13.64 kB │ gzip:   4.56 kB
+dist/assets/runtime-timeline-EWF2TRMQ-BWGuLF_W.js                  14.42 kB │ gzip:   4.76 kB
+dist/assets/runtime-dragDrop-74DNBQ4A-Bbpc4LOC.js                  15.31 kB │ gzip:   4.12 kB
+dist/assets/runtime-chunk-54KAQGZU-CXaDLqao.js                     15.59 kB │ gzip:   6.13 kB
+dist/assets/runtime-textInputs-YSSB35BQ-Dd6whFVg.js                19.33 kB │ gzip:   5.65 kB
+dist/assets/runtime-bloom-UG5HOSMH-CuFyJ3zl.js                     20.59 kB │ gzip:   4.67 kB
+dist/assets/runtime-chunk-VQPMRUIZ-t_bpJwP4.js                     22.84 kB │ gzip:   8.14 kB
+dist/assets/runtime-chunk-OHSWHEBV-eN-rg2WL.js                     27.07 kB │ gzip:   8.58 kB
+dist/assets/howler-znIP_A7Z.js                                     27.14 kB │ gzip:   8.18 kB
+dist/assets/runtime-depthOfField-WIDZIOIS-C90inlkX.js              27.91 kB │ gzip:   6.34 kB
+dist/assets/runtime-collisionBVH-CQUE6RZV-ecBob-JM.js              45.58 kB │ gzip:  15.32 kB
+dist/assets/runtime-particles-KRZTDOJK-DR4oQWxq.js                 45.91 kB │ gzip:  11.40 kB
+dist/assets/process-Dy_gOpgh.js                                    49.10 kB │ gzip:  17.56 kB
+dist/assets/runtime-chunk-QE3AQ5FK-Biv9Ckxv.js                     50.03 kB │ gzip:  13.47 kB
+dist/assets/navmesh-B1pUQaZh.js                                    55.09 kB │ gzip:  11.02 kB
+dist/assets/runtime-chunk-VUJSHZTK-tdN3ob-b.js                     57.37 kB │ gzip:  13.37 kB
+dist/assets/runtime-chunk-XA7NBHZC-B7-R_NqD.js                     61.97 kB │ gzip:  18.60 kB
+dist/assets/runtime-gameControls-HMLU4O4P-BRXgrPIM.js              70.38 kB │ gzip:  19.57 kB
+dist/assets/gaussian-splat-compression-Dbnz1wNI.js                 82.55 kB │ gzip:  23.40 kB
+dist/assets/hana-ui-CT0dCZER.js                                    88.30 kB │ gzip:  21.99 kB
+dist/assets/physics-AaaL1UsF.js                                   140.48 kB │ gzip:  24.84 kB
+dist/assets/opentype-D132FbVD.js                                  173.67 kB │ gzip:  50.28 kB
+dist/assets/runtime-webgpu-GP4ESV4Z-B1tgh4vW.js                   436.86 kB │ gzip: 132.34 kB
+dist/assets/runtime-classicRuntime-L7QG2FJ5-B1b0N4Vw.js           625.81 kB │ gzip: 148.95 kB
+dist/assets/runtime-chunk-NEKALYDS-CQJOPcJq.js                    648.78 kB │ gzip: 185.45 kB
+dist/assets/index-BybOFEre.js                                   1,550.71 kB │ gzip: 448.87 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 20.11s
+npm notice
+npm notice New major version of npm available! 11.16.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice

@@ -1,0 +1,21 @@
+2026-10-18 23:20:07,004 INFO Started server process [26412]
+2026-10-18 23:20:07,005 INFO Waiting for application startup.
+2026-10-18 23:20:07,064 INFO Application startup complete.
+2026-10-18 23:20:07,066 INFO Uvicorn running on http://127.0.0.1:18024 (Press CTRL+C to quit)
+2026-10-18 23:20:07,473 INFO 127.0.0.1:64644 - "WebSocket /ws/parking" [accepted]
+2026-10-18 23:20:07,473 INFO connection open
+2026-10-18 23:20:07,508 INFO 127.0.0.1:64645 - "WebSocket /ws/parking" [accepted]
+2026-10-18 23:20:07,510 INFO connection open
+2026-10-18 23:20:07,575 INFO Gate command published command_id=http-smoke-001; awaiting matching Device ACK
+2026-10-18 23:20:07,579 INFO HTTP Request: POST http://127.0.0.1:18024/api/parking/gate "HTTP/1.1 202 Accepted"
+2026-10-18 23:20:07,626 INFO Gate ACK command_id=http-smoke-001 status=OPENED outcome=CONFIRMED; firmware ACK is not visual servo proof
+2026-10-18 23:20:07,639 INFO HTTP Request: GET http://127.0.0.1:18024/api/parking/status "HTTP/1.1 200 OK"
+2026-10-18 23:20:07,653 INFO HTTP Request: POST http://127.0.0.1:18024/api/parking/gate "HTTP/1.1 200 OK"
+2026-10-18 23:20:07,663 INFO 127.0.0.1:64648 - "WebSocket /ws/parking" [accepted]
+2026-10-18 23:20:07,663 INFO connection open
+2026-10-18 23:20:07,676 INFO HTTP Request: GET http://127.0.0.1:18024/api/parking/status "HTTP/1.1 200 OK"
+2026-10-18 23:20:07,689 INFO HTTP Request: GET http://127.0.0.1:18024/health "HTTP/1.1 200 OK"
+2026-10-18 23:20:07,749 INFO Shutting down
+2026-10-18 23:20:07,850 INFO Waiting for application shutdown.
+2026-10-18 23:20:07,852 INFO Application shutdown complete.
+2026-10-18 23:20:07,852 INFO Finished server process [26412]

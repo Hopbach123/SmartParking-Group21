@@ -1,0 +1,20 @@
+{
+  "mode": "LOCAL_FIXTURE_REAL_HTTP_AND_WEBSOCKET",
+  "real_esp32": false,
+  "mqtt_publish": false,
+  "initial_revision": 5,
+  "update_revision": 6,
+  "command_revision": 7,
+  "confirmed_revision": 8,
+  "clients_equal": true,
+  "idempotent_retry_http": 200,
+  "reconnect_snapshot_rest_equal": true,
+  "health": {
+    "status": "ok",
+    "database": "ok",
+    "phase": "REALTIME_GATE",
+    "mqtt_enabled": false,
+    "websocket_enabled": true
+  },
+  "server_stopped": true
+}
