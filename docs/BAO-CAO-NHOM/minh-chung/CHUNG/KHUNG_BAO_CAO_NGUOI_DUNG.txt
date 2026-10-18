@@ -1,0 +1,196 @@
+BỘ GIÁO DỤC VÀ ĐÀO TẠO
+[TÊN TRƯỜNG / KHOA]
+BÁO CÁO ĐỒ ÁN MÔN LẬP TRÌNH IoT
+
+
+
+ĐỀ TÀI 21
+HỆ THỐNG ĐỖ XE THÔNG MINH
+(SMART PARKING)
+TÀI LIỆU KHUNG BÁO CÁO TOÀN BỘ ĐỒ ÁN – CẬP NHẬT THEO TIẾN ĐỘ
+
+
+Thành viên	Vai trò / MSSV
+Huỳnh Đổ Hoàng Nguyên	Device / 2001230582
+Bạch Ngọc Hợp	Backend / 2001230279
+Bùi Tấn Phước	Frontend / 2001230696
+
+Giảng viên hướng dẫn: [BỔ SUNG]
+Lớp / Học kỳ / Năm học: [BỔ SUNG]
+TP. Hồ Chí Minh, năm 2026
+
+
+HƯỚNG DẪN SỬ DỤNG KHUNG BÁO CÁO
+Đây là KHUNG BÁO CÁO TOÀN BỘ ĐỒ ÁN, không giới hạn ở giai đoạn 1. Giữ nguyên các chương và đề mục xuyên suốt dự án; phần chưa thực hiện để trống và cập nhật sau. Không trình bày kết quả dự kiến như kết quả đã hoàn thành.
+Ký hiệu	Ý nghĩa
+[CHƯA THỰC HIỆN]	Chưa có dữ liệu, sẽ cập nhật sau
+[ĐANG THỰC HIỆN]	Có triển khai nhưng chưa hoàn thành hoặc chưa kiểm thử
+[HOÀN THÀNH]	Đã có minh chứng chạy được và kiểm thử
+[KHÔNG ÁP DỤNG]	Chức năng nằm ngoài phạm vi được nhóm thống nhất
+
+Khi nộp báo cáo giai đoạn 1: chỉ đưa nội dung đã làm vào phần kết quả; các phần còn lại có thể giữ ở dạng thiết kế/kế hoạch theo yêu cầu giảng viên. Trước khi nộp báo cáo cuối kỳ, xóa toàn bộ dòng hướng dẫn màu xám, cập nhật mục lục và kiểm tra chú thích hình/bảng.
+MỤC LỤC
+Trong Microsoft Word: References → Table of Contents → Automatic Table. Các tiêu đề trong tài liệu đã sử dụng Heading 1/2/3 để tạo mục lục tự động.
+DANH MỤC HÌNH ẢNH – BẢNG BIỂU – TỪ VIẾT TẮT
+【NỘI DUNG CẦN BỔ SUNG】 Bổ sung sau khi chèn hình/bảng và thống nhất các thuật ngữ ESP32, MQTT, API, WebSocket, IoT, MVP.
+
+
+LỜI MỞ ĐẦU
+【NỘI DUNG CẦN BỔ SUNG】 Viết lý do chọn đề tài, bối cảnh, mục tiêu, phạm vi và cấu trúc báo cáo; khoảng 1 trang.
+CHƯƠNG 1. TỔNG QUAN ĐỀ TÀI VÀ CƠ SỞ LÝ THUYẾT
+1.1. Đặt vấn đề
+【NỘI DUNG CẦN BỔ SUNG】 Nêu khó khăn khi tìm ô đỗ, quản lý trạng thái bãi xe và lý do áp dụng IoT.
+1.2. Mục tiêu của đề tài
+【NỘI DUNG CẦN BỔ SUNG】 Phân biệt mục tiêu tổng quát và mục tiêu đo lường được.
+1.3. Đối tượng, phạm vi và giới hạn
+【NỘI DUNG CẦN BỔ SUNG】 Mô hình 4 ô; mô phỏng Wokwi; chưa bao gồm OCR, thanh toán, đặt chỗ và ứng dụng di động nếu phạm vi giữ nguyên.
+1.4. Tổng quan IoT và kiến trúc nhiều lớp
+【NỘI DUNG CẦN BỔ SUNG】 Giới thiệu thiết bị, mạng truyền thông, xử lý dữ liệu, ứng dụng.
+1.5. Smart Parking và nguyên lý phát hiện ô đỗ
+【NỘI DUNG CẦN BỔ SUNG】 Mô tả cảm biến thật dự kiến và công tắc mô phỏng.
+1.6. ESP32, cảm biến, servo và Wokwi
+【NỘI DUNG CẦN BỔ SUNG】 Nêu nguyên lý, vai trò từng linh kiện, sơ đồ minh họa và giới hạn mô phỏng.
+1.7. MQTT và mô hình Publish/Subscribe
+【NỘI DUNG CẦN BỔ SUNG】 Giải thích broker, topic, publish, subscribe, QoS theo cấu hình thực tế.
+1.8. REST API, WebSocket và SQLite
+【NỘI DUNG CẦN BỔ SUNG】 Giải thích vai trò và lý do sử dụng.
+1.9. Dashboard và trực quan hóa 2D/3D
+【NỘI DUNG CẦN BỔ SUNG】 Nêu vai trò hiển thị; Spline/Three.js là công cụ UI, không thay thế cảm biến.
+1.10. Tổng kết chương
+【NỘI DUNG CẦN BỔ SUNG】 Tóm tắt nền tảng liên quan trực tiếp tới giải pháp.
+
+
+CHƯƠNG 2. PHÂN TÍCH YÊU CẦU VÀ THIẾT KẾ HỆ THỐNG
+2.1. Khảo sát bài toán và tác nhân sử dụng
+【NỘI DUNG CẦN BỔ SUNG】 Mô tả người giám sát, người vận hành và thiết bị.
+2.2. Yêu cầu chức năng
+【NỘI DUNG CẦN BỔ SUNG】 Mô tả quản lý 4 ô, cảnh báo đầy, điều khiển cổng, lịch sử và giám sát kết nối.
+2.3. Yêu cầu phi chức năng
+【NỘI DUNG CẦN BỔ SUNG】 Độ trễ cập nhật, khả năng xử lý mất kết nối, dễ demo, bảo mật tối thiểu.
+2.4. Phạm vi MVP và các chức năng mở rộng
+【NỘI DUNG CẦN BỔ SUNG】 Phân định bắt buộc, nên có, sau cùng; tránh mở rộng phạm vi.
+2.5. Kiến trúc tổng thể
+【NỘI DUNG CẦN BỔ SUNG】 Chèn sơ đồ ESP32/Wokwi → MQTT Broker → FastAPI/SQLite → React Dashboard/3D.
+2.6. Thiết kế phần cứng và sơ đồ kết nối
+【NỘI DUNG CẦN BỔ SUNG】 Bảng chân GPIO, công tắc P01–P04, servo, sơ đồ Wokwi.
+2.7. Thiết kế luồng dữ liệu và giao tiếp MQTT
+【NỘI DUNG CẦN BỔ SUNG】 Topic, JSON schema, timestamp, quy tắc cập nhật, reconnect.
+2.8. Thiết kế Backend và REST API/WebSocket
+【NỘI DUNG CẦN BỔ SUNG】 Endpoint, response mẫu, xử lý trạng thái, cảnh báo FULL.
+2.9. Thiết kế cơ sở dữ liệu
+【NỘI DUNG CẦN BỔ SUNG】 ERD/schema bảng slot, event, gate command nếu có.
+2.10. Thiết kế giao diện Dashboard và mô hình 3D
+【NỘI DUNG CẦN BỔ SUNG】 Wireframe, bố cục 4 ô, xe hiện/ẩn theo dữ liệu, trạng thái UNKNOWN.
+2.11. Quy trình xe vào, xe ra và điều khiển barrier
+【NỘI DUNG CẦN BỔ SUNG】 Lưu đồ ENTRY/EXIT; bãi đầy chặn ENTRY, vẫn cho EXIT; ghi rõ giới hạn không có cảm biến cổng nếu chưa bổ sung.
+2.12. Thiết kế bảo mật và xử lý lỗi
+【NỘI DUNG CẦN BỔ SUNG】 Thông tin broker, xác thực, kiểm tra payload, offline/reconnect.
+2.13. Phân công và kế hoạch tích hợp
+【NỘI DUNG CẦN BỔ SUNG】 Ranh giới Device/Backend/Frontend; quy trình Git và hợp đồng tích hợp.
+2.14. Tổng kết chương
+【NỘI DUNG CẦN BỔ SUNG】 Tổng kết quyết định thiết kế và phần chưa chốt.
+Bảng 2.1. Yêu cầu chức năng
+Mã	Chức năng	Mức ưu tiên	Trạng thái
+FR01	Theo dõi 4 ô đỗ	Bắt buộc	[CHƯA THỰC HIỆN]
+FR02	Cập nhật qua MQTT → Dashboard	Bắt buộc	[CHƯA THỰC HIỆN]
+FR03	Cảnh báo bãi đầy	Bắt buộc	[CHƯA THỰC HIỆN]
+FR04	Điều khiển cổng	MVP theo kế hoạch	[CHƯA THỰC HIỆN]
+FR05	Lịch sử sự kiện	Nên có	[CHƯA THỰC HIỆN]
+FR06	Mô hình bãi xe 3D	Trực quan hóa	[CHƯA THỰC HIỆN]
+
+
+
+CHƯƠNG 3. TRIỂN KHAI VÀ XÂY DỰNG HỆ THỐNG
+3.1. Môi trường phát triển và cấu trúc dự án
+【NỘI DUNG CẦN BỔ SUNG】 Phiên bản công cụ, cấu trúc repository, cách chạy local.
+3.2. Triển khai ESP32 trên Wokwi
+【NỘI DUNG CẦN BỔ SUNG】 Ảnh mạch, source code trọng tâm, cách đọc P01–P04.
+3.3. Kết nối Wi-Fi và MQTT Broker
+【NỘI DUNG CẦN BỔ SUNG】 Cấu hình, topic, log publish và xử lý lỗi.
+3.4. Triển khai servo/barrier
+【NỘI DUNG CẦN BỔ SUNG】 Code điều khiển, xác nhận lệnh, ảnh trạng thái nếu đã có.
+3.5. Triển khai FastAPI MQTT Subscriber
+【NỘI DUNG CẦN BỔ SUNG】 Luồng nhận và validate payload.
+3.6. Triển khai SQLite và quản lý trạng thái
+【NỘI DUNG CẦN BỔ SUNG】 Ảnh schema, dữ liệu mẫu, cơ chế ghi lịch sử.
+3.7. Triển khai REST API và WebSocket
+【NỘI DUNG CẦN BỔ SUNG】 Danh sách endpoint, ảnh Swagger, thông điệp realtime.
+3.8. Triển khai React Dashboard
+【NỘI DUNG CẦN BỔ SUNG】 Ảnh màn hình, KPI, trạng thái ô, cảnh báo.
+3.9. Triển khai mô hình 3D Spline/Three.js
+【NỘI DUNG CẦN BỔ SUNG】 Ảnh scene, tên đối tượng xe, cách mapping trạng thái ô sang mô hình.
+3.10. Tích hợp ba lớp Device – Backend – Frontend
+【NỘI DUNG CẦN BỔ SUNG】 Ảnh/log luồng chạy xuyên suốt; chỉ mô tả kết quả đã xác nhận.
+3.11. Hướng dẫn cài đặt và vận hành demo
+【NỘI DUNG CẦN BỔ SUNG】 Các bước bật broker, backend, frontend, Wokwi và kịch bản demo.
+3.12. Tổng kết chương
+【NỘI DUNG CẦN BỔ SUNG】 Các module đã hoàn thành, các phần còn đang phát triển.
+
+
+CHƯƠNG 4. KIỂM THỬ, KẾT QUẢ VÀ ĐÁNH GIÁ
+4.1. Mục tiêu và phương pháp kiểm thử
+【NỘI DUNG CẦN BỔ SUNG】 Phân biệt unit, integration, end-to-end; môi trường kiểm thử.
+4.2. Kịch bản kiểm thử chức năng
+【NỘI DUNG CẦN BỔ SUNG】 Mỗi test case: điều kiện, bước, kết quả kỳ vọng, thực tế, minh chứng.
+4.3. Kiểm thử truyền dữ liệu MQTT
+【NỘI DUNG CẦN BỔ SUNG】 Đổi công tắc, đo thời gian cập nhật nếu có phương pháp đo.
+4.4. Kiểm thử API, cơ sở dữ liệu và WebSocket
+【NỘI DUNG CẦN BỔ SUNG】 Ảnh Swagger/log DB và cập nhật realtime.
+4.5. Kiểm thử Dashboard và mô hình 3D
+【NỘI DUNG CẦN BỔ SUNG】 Xe xuất hiện/biến mất, FULL, UNKNOWN, trạng thái offline.
+4.6. Kiểm thử điều khiển cổng và tình huống bãi đầy
+【NỘI DUNG CẦN BỔ SUNG】 ENTRY bị từ chối khi FULL; EXIT vẫn được phép; chỉ báo đạt khi đã kiểm thử.
+4.7. Kiểm thử lỗi và độ ổn định
+【NỘI DUNG CẦN BỔ SUNG】 Mất mạng, broker không khả dụng, dữ liệu sai, khởi động lại.
+4.8. Tổng hợp kết quả và minh chứng
+【NỘI DUNG CẦN BỔ SUNG】 Bảng đạt/chưa đạt, ảnh, link video demo, commit Git.
+4.9. Đánh giá ưu điểm, hạn chế
+【NỘI DUNG CẦN BỔ SUNG】 Giới hạn mô phỏng, thiếu cảm biến vật lý, thiếu phát hiện xe ở cổng nếu có.
+4.10. Tổng kết chương
+【NỘI DUNG CẦN BỔ SUNG】 Kết luận dựa trên test case thực tế.
+Bảng 4.1. Ma trận kiểm thử
+ID	Kịch bản	Kỳ vọng	Thực tế	Trạng thái
+TC01	P01 trống → có xe	Dashboard cập nhật P01	[ĐIỀN]	[CHƯA THỬ]
+TC02	P01 có xe → trống	Dashboard cập nhật P01	[ĐIỀN]	[CHƯA THỬ]
+TC03	4/4 ô có xe	Cảnh báo FULL	[ĐIỀN]	[CHƯA THỬ]
+TC04	Yêu cầu ENTRY khi FULL	Từ chối mở cổng vào	[ĐIỀN]	[CHƯA THỬ]
+TC05	Yêu cầu EXIT khi FULL	Cho phép xử lý ra	[ĐIỀN]	[CHƯA THỬ]
+TC06	Ngắt kết nối MQTT	Hiển thị/ghi nhận trạng thái lỗi	[ĐIỀN]	[CHƯA THỬ]
+
+
+
+CHƯƠNG 5. KẾT LUẬN VÀ HƯỚNG PHÁT TRIỂN
+5.1. Kết quả đạt được so với mục tiêu
+【NỘI DUNG CẦN BỔ SUNG】 Đối chiếu mục tiêu chương 1 với test case chương 4.
+5.2. Đóng góp của từng thành viên
+【NỘI DUNG CẦN BỔ SUNG】 Nêu phần thực hiện thực tế, minh chứng commit và nhiệm vụ tích hợp.
+5.3. Hạn chế còn tồn tại
+【NỘI DUNG CẦN BỔ SUNG】 Nêu thẳng thắn các tính năng chưa hoàn thiện.
+5.4. Hướng phát triển
+【NỘI DUNG CẦN BỔ SUNG】 Cảm biến thực, mô hình vật lý, thêm số ô, tối ưu UI/3D, bảo mật nâng cao nếu phù hợp.
+TÀI LIỆU THAM KHẢO
+【NỘI DUNG CẦN BỔ SUNG】 Liệt kê giáo trình, tài liệu kỹ thuật và nguồn template/asset theo định dạng thống nhất; không tự tạo nguồn.
+PHỤ LỤC
+Phụ lục A. Bảng phân công và nhật ký tiến độ
+【NỘI DUNG CẦN BỔ SUNG】 Cập nhật hằng tuần.
+Phụ lục B. Hợp đồng tích hợp MQTT
+【NỘI DUNG CẦN BỔ SUNG】 Topic, JSON, quy ước trạng thái và timestamp.
+Phụ lục C. Danh sách API và WebSocket
+【NỘI DUNG CẦN BỔ SUNG】 Endpoint, request, response và mã lỗi.
+Phụ lục D. Sơ đồ chân ESP32 và cấu hình Wokwi
+【NỘI DUNG CẦN BỔ SUNG】 Ảnh hoặc bảng chân GPIO.
+Phụ lục E. Bộ test case và minh chứng
+【NỘI DUNG CẦN BỔ SUNG】 Ảnh chụp, log, đường dẫn video.
+Phụ lục F. Nguồn thư viện, asset 3D và phạm vi hỗ trợ AI
+【NỘI DUNG CẦN BỔ SUNG】 Ghi nhận nguồn và mức độ nhóm tự triển khai.
+BẢNG THEO DÕI TIẾN ĐỘ VIẾT BÁO CÁO
+Phần	Phụ trách chính	Trạng thái	Minh chứng / ghi chú
+Chương 1	Cả nhóm	Chưa cập nhật	
+Chương 2 – Device	Nguyên	Chưa cập nhật	
+Chương 2 – Backend	Hợp	Chưa cập nhật	
+Chương 2 – UI/3D	Phước	Chưa cập nhật	
+Chương 3 – Device	Nguyên	Chưa cập nhật	
+Chương 3 – Backend	Hợp	Chưa cập nhật	
+Chương 3 – Frontend	Phước	Chưa cập nhật	
+Chương 4	Cả nhóm	Chưa cập nhật	
+Chương 5	Cả nhóm	Chưa cập nhật	

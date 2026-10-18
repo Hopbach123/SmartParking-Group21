@@ -1,0 +1,38 @@
+
+> smart-parking-dashboard-mvp@1.0.0 test
+> node --test tests/*.test.js
+
+✔ LIVE starts UNKNOWN; store stable, frozen, no RESET/slot writes (11.187ms)
+✔ WS applies newer revisions, ignores duplicates/old snapshots and computes history from server (1.8215ms)
+✔ malformed WS disconnects without erasing last known history; reconnect fetches REST and accepts new stream (1.8387ms)
+✔ disconnect blocks commands, preserves last-known and old socket cannot mutate after reconnect (2.4814ms)
+✔ REST newer than initial WS buffer is not rolled back (1.0855ms)
+✔ REST/WS stream mismatch forces resync rather than mixing datasets (0.7867ms)
+✔ gate POST keeps confirmed position until ACK and command/snapshot same revision both apply (3.6032ms)
+✔ FULL rejection exposes backend error and never optimistically opens gate (1.1987ms)
+✔ ambiguous POST is recoverable by same ID, never automatic republish (2.3077ms)
+✔ refresh recovers saved command with GET only (1.3674ms)
+✔ refresh without pending request can recover server pending command (1.03ms)
+✔ no duplicate events; reject invalid event enums, duplicate IDs, wrong source and connection (0.7431ms)
+✔ history baseline STATUS does not fabricate an IN, FULL/UNKNOWN data left intact (1.2019ms)
+✔ unknown outcome retains ID; explicit retry reuses exact request, reconnect never reposts (2.5503ms)
+✔ WS handshake timeout schedules bounded reconnect (0.9954ms)
+✔ late POST PENDING cannot regress a command already confirmed by WS (0.8846ms)
+✔ UNKNOWN excludes availability and does not count a departure (8.0821ms)
+✔ RESET restores slots, gate, history, statistics and notifies once (0.5702ms)
+✔ fresh session is consistent and snapshot is immutable (0.3968ms)
+✔ contract accepts JSON roundtrip, rejects missing slots, inherited IDs, invalid statuses and timezone-less timestamps (0.4699ms)
+✔ entry, exit, FULL, no-op updates and statistics remain consistent (0.3513ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 318.9268
+npm notice
+npm notice New major version of npm available! 11.16.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice

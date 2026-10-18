@@ -1,0 +1,187 @@
+[
+  {
+    "original": "frontend/docs/Rp-Tv1.md",
+    "archive": "minh-chung/TV1/Rp-Tv1.md",
+    "sha256": "88d8295a5be1307fd927f20e12d01418be6789ecee9121a074af55c4c813b60c"
+  },
+  {
+    "original": "device/README.md",
+    "archive": "minh-chung/TV1/README.md",
+    "sha256": "57d7f50f8ba5a5171bccdb66feabd0ad8d09e76e53bc82f545cb018400a49160"
+  },
+  {
+    "original": "docs/phase-02-backend-core-report.md",
+    "archive": "minh-chung/TV2/phase-02-backend-core-report.md",
+    "sha256": "f172ddef47baad62cd5bbb1f6de205fb66dacf6dda5c1d4e2fb8d125881c06e7"
+  },
+  {
+    "original": "docs/phase-02-pytest.log",
+    "archive": "minh-chung/TV2/phase-02-pytest.log",
+    "sha256": "ffd43f389e97a769c372c39e01e64e7862ac65c732a7e71b3d46aeb4dde3507e"
+  },
+  {
+    "original": "docs/phase-02-pytest.xml",
+    "archive": "minh-chung/TV2/phase-02-pytest.xml",
+    "sha256": "059bf6e8fd608d67df880ca8f1c7bd8f1af1432fcced630632f3c31c01f420f4"
+  },
+  {
+    "original": "docs/phase-02-http-smoke.json",
+    "archive": "minh-chung/TV2/phase-02-http-smoke.json",
+    "sha256": "4eb2d240ce711f7246d2155a60ecccc0f95ba3f7214ec4114605427adfd368e0"
+  },
+  {
+    "original": "docs/phase-03-mqtt-report.md",
+    "archive": "minh-chung/TV2/phase-03-mqtt-report.md",
+    "sha256": "635333dd750212732cf20bf487f45963bfdddfe488ae2a61d727518616b8f52c"
+  },
+  {
+    "original": "docs/phase-03-pytest.log",
+    "archive": "minh-chung/TV2/phase-03-pytest.log",
+    "sha256": "0e1d5cd4c109337032394d67969d885a0db26a77f600b56119716be6805ba770"
+  },
+  {
+    "original": "docs/phase-03-pytest.xml",
+    "archive": "minh-chung/TV2/phase-03-pytest.xml",
+    "sha256": "cabe2ebc119f50f88d1d0ebd991b31ef4245206470f7896d54604cf249bfd171"
+  },
+  {
+    "original": "docs/phase-03-live-probe.json",
+    "archive": "minh-chung/TV2/phase-03-live-probe.json",
+    "sha256": "c8333248862098c719025c8e099fa31990628d77683967ebddfbf422e55e1369"
+  },
+  {
+    "original": "docs/phase-04-realtime-gate-report.md",
+    "archive": "minh-chung/TV2/phase-04-realtime-gate-report.md",
+    "sha256": "41fd325b74f01a2864bac1f003dcd1837107f2b308f2852c8016b845a4f80f8e"
+  },
+  {
+    "original": "docs/phase-04-pytest.log",
+    "archive": "minh-chung/TV2/phase-04-pytest.log",
+    "sha256": "93665d278aac93f2a074a3f9c0c6381279355aaa01a509220daf67bfe3a1e94d"
+  },
+  {
+    "original": "docs/phase-04-pytest.xml",
+    "archive": "minh-chung/TV2/phase-04-pytest.xml",
+    "sha256": "37475b20d8f98fc654478d44607722251dcc6b6af6f76d3e502d086e0a365837"
+  },
+  {
+    "original": "docs/phase-04-http-ws-smoke.json",
+    "archive": "minh-chung/TV2/phase-04-http-ws-smoke.json",
+    "sha256": "ddb1cc626325b7696613f17e782b8fb3f1e06c06396707a642a3c8906ea6493e"
+  },
+  {
+    "original": "docs/phase-04-manual-test.md",
+    "archive": "minh-chung/TV2/phase-04-manual-test.md",
+    "sha256": "790f3189f234ba1269e46ee63346d4a11c77c41396beadbb2219f3b2cee4995d"
+  },
+  {
+    "original": "docs/phase-05-frontend-live-report.md",
+    "archive": "minh-chung/TV3/phase-05-frontend-live-report.md",
+    "sha256": "6ea0d1ee0e294d2bab4c8448a42666ff3a644dab49f86df044dd87bf692bbee7"
+  },
+  {
+    "original": "docs/phase-05-tests.log",
+    "archive": "minh-chung/TV3/phase-05-tests.log",
+    "sha256": "b254cfaa7442c512a6668474e3446b24bbb0adfaa7d24c93ea8537d428ffee73"
+  },
+  {
+    "original": "docs/phase-05-build-demo.log",
+    "archive": "minh-chung/TV3/phase-05-build-demo.log",
+    "sha256": "d07b53db0402998448203cf81a6bcade268947c57286bccff9def3a7639fa7f3"
+  },
+  {
+    "original": "docs/phase-05-build-live.log",
+    "archive": "minh-chung/TV3/phase-05-build-live.log",
+    "sha256": "1fdb6f4d344355a558045b1f204f15019fd3203584ea8573b3cffb36ed4683e3"
+  },
+  {
+    "original": "docs/phase-05-audit.json",
+    "archive": "minh-chung/TV3/phase-05-audit.json",
+    "sha256": "2f4a5e2e8eeae9e46e01a41394c65047a1f0e4241746823555d7624b60d266ce"
+  },
+  {
+    "original": "docs/phase-05-audit-offline.json",
+    "archive": "minh-chung/TV3/phase-05-audit-offline.json",
+    "sha256": "2f4a5e2e8eeae9e46e01a41394c65047a1f0e4241746823555d7624b60d266ce"
+  },
+  {
+    "original": "docs/phase-05-network-fixture.log",
+    "archive": "minh-chung/TV3/phase-05-network-fixture.log",
+    "sha256": "395c3c3be6ee698675e095761b68e74dedc46798d8563a8144c5e9106d3c2350"
+  },
+  {
+    "original": "docs/phase-05-running-backend.json",
+    "archive": "minh-chung/TV3/phase-05-running-backend.json",
+    "sha256": "cb8d2b1feb348678c3c630aff5f069775d1c707df0fad54ac1cb71dbb2655536"
+  },
+  {
+    "original": "docs/phase-05-manual-test.md",
+    "archive": "minh-chung/TV3/phase-05-manual-test.md",
+    "sha256": "191411fc14470da91219c7535c5af32fb27309145a91053ff8afbebf5728ed88"
+  },
+  {
+    "original": "docs/live-dashboard.png",
+    "archive": "minh-chung/TV3/live-dashboard.png",
+    "sha256": "44a262d0058332e7656d4c8cb80ffa768922e0e87af1866b33bb258a82a5d371"
+  },
+  {
+    "original": "docs/frontend-build.log",
+    "archive": "minh-chung/TV3/frontend-build.log",
+    "sha256": "ec52ef12fdab527b3878a2e71befaf537d91eb98d52bb4946a3f8baf2a08ec7c"
+  },
+  {
+    "original": "docs/frontend-test.log",
+    "archive": "minh-chung/TV3/frontend-test.log",
+    "sha256": "14fb93d97917f41e7721048d44c823d45012a0b799277885e2c7c264eef5be1c"
+  },
+  {
+    "original": "frontend/docs/Rp-Tv3_CongNgheSuDung_TienDO.md",
+    "archive": "minh-chung/TV3/Rp-Tv3_CongNgheSuDung_TienDO.md",
+    "sha256": "c3dcb342c3e375bc4cabf3d56d1d01de6c9c49fb43d2169e15d0a117f5d78d3c"
+  },
+  {
+    "original": "frontend/docs/Smart-Parking-Report.md",
+    "archive": "minh-chung/TV3/Smart-Parking-Report.md",
+    "sha256": "76da2afe8a331b366d75acf18fc2e5405052b3769e2f4137819a273fdb4a2f26"
+  },
+  {
+    "original": "frontend/docs/audit-before.json",
+    "archive": "minh-chung/TV3/audit-before.json",
+    "sha256": "24626e2277642dd8cd7f6cefb4085dd2626e77d264734cde5b352aea8227d6fa"
+  },
+  {
+    "original": "frontend/docs/audit-after.json",
+    "archive": "minh-chung/TV3/audit-after.json",
+    "sha256": "b97cc8329ae3a99dc6514f18e9da36633416d57bd1179139f9e4b2401a933c98"
+  },
+  {
+    "original": "frontend/docs/build-validation.log",
+    "archive": "minh-chung/TV3/build-validation.log",
+    "sha256": "41447b94ab3c1c3f55221a40d8f43f59e8e79cd59ff9a7a77172b15aad3bcce5"
+  },
+  {
+    "original": "frontend/docs/test-validation.log",
+    "archive": "minh-chung/TV3/test-validation.log",
+    "sha256": "3d31799d674be44ceac946b91acf48f94eb521416cf6ab1b60fe25bc611447a0"
+  },
+  {
+    "original": "docs/integration-contract-v1.md",
+    "archive": "minh-chung/CHUNG/integration-contract-v1.md",
+    "sha256": "553a358c49a6214f96feeaf11484fc53cf3ea80a04b957a165586b7506de1973"
+  },
+  {
+    "original": "docs/mqtt-contract.md",
+    "archive": "minh-chung/CHUNG/mqtt-contract.md",
+    "sha256": "3f13e5b487fb6d7b9deaef1fb38f3449ed35f2c8c0bbacd34591e10f3b044067"
+  },
+  {
+    "original": "docs/integration-audit.md",
+    "archive": "minh-chung/CHUNG/integration-audit.md",
+    "sha256": "2586fd15c7221728a70726cb321f6f16cb23cdaf072ca1a1bb46a89bb9ee5ec7"
+  },
+  {
+    "original": "docs/NOI_DUNG_BAO_CAO_TV1_TV3.md",
+    "archive": "minh-chung/CHUNG/NOI_DUNG_BAO_CAO_TV1_TV3.md",
+    "sha256": "4ba7c6dc577627a64d412728b33b80706144f587ab1d6ea650d7f58fa6f0a1e4"
+  }
+]

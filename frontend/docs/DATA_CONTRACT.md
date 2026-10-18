@@ -42,3 +42,19 @@
 3. WebSocket /ws/parking dự kiến gửi snapshot có schema_version; thêm sequence/revision, chống trùng id, bỏ bản tin cũ, reconnect và đồng bộ lại snapshot sau mất mạng.
 4. Backend là nguồn xác nhận: gửi lệnh rồi áp dụng trạng thái được xác nhận; phân biệt trạng thái cổng yêu cầu với cảm biến xác nhận khi có phần cứng. Báo lỗi/mất kết nối, không biến lỗi mạng thành EMPTY.
 5. Chốt UTC, giới hạn/phân trang lịch sử, mã lỗi, CORS và biến môi trường URL trước khi tích hợp. Không gửi lệnh MQTT từ trình duyệt.
+
+
+## Giai đoạn 5 — adapter LIVE đã triển khai
+
+Các mục “dự kiến” bên trên được bảo toàn làm lịch sử thiết kế. Contract tích hợp v1 và D01–D08 đã được người dùng duyệt trong hội thoại; file giai đoạn 1 vẫn mang tiêu đề DRAFT cũ, không tự đổi contract.
+
+- `parkingService.js` tiếp tục là mock DEMO, không thay đổi logic.
+- `parkingStore.js` chọn service theo `VITE_PARKING_MODE` (DEMO mặc định). `liveParkingService.js` giữ subscribe/getParkingStatus đồng bộ và snapshot bất biến.
+- LIVE GET `/api/parking/status`, WS `/ws/parking`. Validate slots, event, gate metadata, health, schema_version, stream_id/revision. Không gọi PATCH slot hoặc RESET.
+- Mỗi lần mở/reconnect WS, GET REST rồi áp dụng bản tin WS đã đệm; cùng stream chỉ nhận revision mới hơn. Nếu REST/WS khác stream, reconnect để tránh trộn dataset. Command có revision riêng, không làm mất snapshot cùng revision.
+- UI thống kê từ full events của snapshot đang hiển thị; không trộn response statistics/events khác revision. IN/OUT giữ nguyên phân loại do Backend cung cấp, baseline STATUS không tính IN.
+- POST `/api/parking/gate` với `{command_id,status,direction}`. UUID do client sinh, direction ENTRY/EXIT bắt buộc, status OPEN/CLOSED. Không thay gate từ trạng thái yêu cầu. Chỉ đồng bộ barrier khi gate_meta.confirmed=true và transport không stale; cổng chưa xác nhận giữ pose cuối và có nhãn rõ.
+- PENDING/CONFIRMED/ERROR/TIMEOUT theo contract. GET command khôi phục lệnh bị mất phản hồi. Lưu request chưa giải quyết trong sessionStorage (nếu trình duyệt cho phép); refresh/reconnect chỉ GET, không tự gửi lại. Khi chưa biết kết quả, người dùng có thể retry cùng ID/body; Backend chống trùng.
+- Lỗi mạng không đổi slots thành EMPTY, không xóa history, không chuyển DEMO. Gắn stale và reconnect backoff 1–30 giây. HTTP và handshake có timeout 10 giây; poll command 1.5 giây khi cần.
+- Không persistence trạng thái frontend LIVE; dữ liệu lấy lại từ SQLite qua REST. Khi sessionStorage bị chặn, vẫn có thể khôi phục pending ID có trong snapshot Backend; không bảo đảm khôi phục ID của request thất lạc trước khi Backend lưu.
+- Không thêm dependency. URL REST/WS cấu hình bằng biến Vite; biến được nhúng khi build và phải build/restart lại khi thay.

@@ -1,0 +1,1 @@
+{"mode":"ADAPTER_REAL_HTTP_WS_LOCAL_FIXTURE","pass":true,"real_esp32":false,"mqtt_publish":false,"slot_changes":true,"history":true,"gate_pending_confirmed":true,"reconnect":true,"refresh":true}

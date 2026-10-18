@@ -1,0 +1,16 @@
+2026-10-18 22:39:19,128 INFO uvicorn.error Started server process [56024]
+2026-10-18 22:39:19,129 INFO uvicorn.error Waiting for application startup.
+2026-10-18 22:39:19,294 INFO uvicorn.error.mqtt MQTT subscriber started; read-only, no command publisher
+2026-10-18 22:39:19,294 INFO uvicorn.error Application startup complete.
+2026-10-18 22:39:19,295 INFO uvicorn.error Uvicorn running on http://127.0.0.1:18023 (Press CTRL+C to quit)
+2026-10-18 22:39:26,768 INFO uvicorn.error.mqtt MQTT connected broker=broker.hivemq.com:1883; subscribe requested mid=1 topics=smartparking/group21/slots/P01/state,smartparking/group21/slots/P02/state,smartparking/group21/slots/P03/state,smartparking/group21/slots/P04/state,smartparking/group21/device/status,smartparking/group21/gate/status
+2026-10-18 22:39:26,770 WARNING uvicorn.error.mqtt MQTT disconnected; slot trust revoked, last-known/history preserved
+2026-10-18 22:39:27,137 INFO uvicorn.error.mqtt MQTT subscription ready; awaiting heartbeat and four-slot baseline
+2026-10-18 22:39:37,481 INFO uvicorn.error Shutting down
+2026-10-18 22:39:37,582 INFO uvicorn.error Waiting for application shutdown.
+2026-10-18 22:39:37,586 WARNING uvicorn.error.mqtt MQTT transport disconnected reason=Normal disconnection; reconnect handled by Paho
+2026-10-18 22:39:37,587 WARNING uvicorn.error.mqtt MQTT disconnected; slot trust revoked, last-known/history preserved
+2026-10-18 22:39:37,589 WARNING uvicorn.error.mqtt MQTT disconnected; slot trust revoked, last-known/history preserved
+2026-10-18 22:39:37,589 INFO uvicorn.error.mqtt MQTT subscriber stopped
+2026-10-18 22:39:37,589 INFO uvicorn.error Application shutdown complete.
+2026-10-18 22:39:37,589 INFO uvicorn.error Finished server process [56024]

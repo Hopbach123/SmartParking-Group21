@@ -572,7 +572,7 @@ void setup() {
   mqtt.setCallback(mqttCallback);
   mqtt.setBufferSize(512);
   mqtt.setKeepAlive(15);
-  mqtt.setSocketTimeout(3);
+  mqtt.setSocketTimeout(15);
 
   reconnectWiFi();
 }
@@ -652,6 +652,12 @@ void loop() {
       ) {
         publishHeartbeat();
         lastHeartbeatAt = millis();
+
+        // Republish real sensor states so late/reconnected subscribers recover baseline.
+        // Keep the same topics/payload; unchanged state must not create new vehicle events.
+        for (int i = 0; i < 4; i++) {
+          slotDirty[i] = true;
+        }
       }
     }
   }

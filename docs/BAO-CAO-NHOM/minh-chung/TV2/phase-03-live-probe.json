@@ -1,0 +1,346 @@
+{
+  "mode": "READ_ONLY_LIVE_BROKER_PROBE",
+  "synthetic_publish": false,
+  "wokwi_switch_test": "NOT VERIFIED",
+  "broker": "broker.hivemq.com:1883",
+  "observations": [
+    {
+      "second": 0,
+      "http_status": 200,
+      "connection": {
+        "mqtt": "DISCONNECTED",
+        "device": "UNKNOWN",
+        "synchronized": false
+      },
+      "slots": {
+        "P01": "UNKNOWN",
+        "P02": "UNKNOWN",
+        "P03": "UNKNOWN",
+        "P04": "UNKNOWN"
+      },
+      "events": 0
+    },
+    {
+      "second": 1,
+      "http_status": 200,
+      "connection": {
+        "mqtt": "DISCONNECTED",
+        "device": "UNKNOWN",
+        "synchronized": false
+      },
+      "slots": {
+        "P01": "UNKNOWN",
+        "P02": "UNKNOWN",
+        "P03": "UNKNOWN",
+        "P04": "UNKNOWN"
+      },
+      "events": 0
+    },
+    {
+      "second": 2,
+      "http_status": 200,
+      "connection": {
+        "mqtt": "DISCONNECTED",
+        "device": "UNKNOWN",
+        "synchronized": false
+      },
+      "slots": {
+        "P01": "UNKNOWN",
+        "P02": "UNKNOWN",
+        "P03": "UNKNOWN",
+        "P04": "UNKNOWN"
+      },
+      "events": 0
+    },
+    {
+      "second": 3,
+      "http_status": 200,
+      "connection": {
+        "mqtt": "DISCONNECTED",
+        "device": "UNKNOWN",
+        "synchronized": false
+      },
+      "slots": {
+        "P01": "UNKNOWN",
+        "P02": "UNKNOWN",
+        "P03": "UNKNOWN",
+        "P04": "UNKNOWN"
+      },
+      "events": 0
+    },
+    {
+      "second": 4,
+      "http_status": 200,
+      "connection": {
+        "mqtt": "DISCONNECTED",
+        "device": "UNKNOWN",
+        "synchronized": false
+      },
+      "slots": {
+        "P01": "UNKNOWN",
+        "P02": "UNKNOWN",
+        "P03": "UNKNOWN",
+        "P04": "UNKNOWN"
+      },
+      "events": 0
+    },
+    {
+      "second": 5,
+      "http_status": 200,
+      "connection": {
+        "mqtt": "DISCONNECTED",
+        "device": "UNKNOWN",
+        "synchronized": false
+      },
+      "slots": {
+        "P01": "UNKNOWN",
+        "P02": "UNKNOWN",
+        "P03": "UNKNOWN",
+        "P04": "UNKNOWN"
+      },
+      "events": 0
+    },
+    {
+      "second": 6,
+      "http_status": 200,
+      "connection": {
+        "mqtt": "DISCONNECTED",
+        "device": "UNKNOWN",
+        "synchronized": false
+      },
+      "slots": {
+        "P01": "UNKNOWN",
+        "P02": "UNKNOWN",
+        "P03": "UNKNOWN",
+        "P04": "UNKNOWN"
+      },
+      "events": 0
+    },
+    {
+      "second": 7,
+      "http_status": 200,
+      "connection": {
+        "mqtt": "DISCONNECTED",
+        "device": "UNKNOWN",
+        "synchronized": false
+      },
+      "slots": {
+        "P01": "UNKNOWN",
+        "P02": "UNKNOWN",
+        "P03": "UNKNOWN",
+        "P04": "UNKNOWN"
+      },
+      "events": 0
+    },
+    {
+      "second": 8,
+      "http_status": 200,
+      "connection": {
+        "mqtt": "CONNECTED",
+        "device": "UNKNOWN",
+        "synchronized": false
+      },
+      "slots": {
+        "P01": "UNKNOWN",
+        "P02": "UNKNOWN",
+        "P03": "UNKNOWN",
+        "P04": "UNKNOWN"
+      },
+      "events": 0
+    },
+    {
+      "second": 9,
+      "http_status": 200,
+      "connection": {
+        "mqtt": "CONNECTED",
+        "device": "UNKNOWN",
+        "synchronized": false
+      },
+      "slots": {
+        "P01": "UNKNOWN",
+        "P02": "UNKNOWN",
+        "P03": "UNKNOWN",
+        "P04": "UNKNOWN"
+      },
+      "events": 0
+    },
+    {
+      "second": 10,
+      "http_status": 200,
+      "connection": {
+        "mqtt": "CONNECTED",
+        "device": "UNKNOWN",
+        "synchronized": false
+      },
+      "slots": {
+        "P01": "UNKNOWN",
+        "P02": "UNKNOWN",
+        "P03": "UNKNOWN",
+        "P04": "UNKNOWN"
+      },
+      "events": 0
+    },
+    {
+      "second": 11,
+      "http_status": 200,
+      "connection": {
+        "mqtt": "CONNECTED",
+        "device": "UNKNOWN",
+        "synchronized": false
+      },
+      "slots": {
+        "P01": "UNKNOWN",
+        "P02": "UNKNOWN",
+        "P03": "UNKNOWN",
+        "P04": "UNKNOWN"
+      },
+      "events": 0
+    },
+    {
+      "second": 12,
+      "http_status": 200,
+      "connection": {
+        "mqtt": "CONNECTED",
+        "device": "UNKNOWN",
+        "synchronized": false
+      },
+      "slots": {
+        "P01": "UNKNOWN",
+        "P02": "UNKNOWN",
+        "P03": "UNKNOWN",
+        "P04": "UNKNOWN"
+      },
+      "events": 0
+    },
+    {
+      "second": 13,
+      "http_status": 200,
+      "connection": {
+        "mqtt": "CONNECTED",
+        "device": "UNKNOWN",
+        "synchronized": false
+      },
+      "slots": {
+        "P01": "UNKNOWN",
+        "P02": "UNKNOWN",
+        "P03": "UNKNOWN",
+        "P04": "UNKNOWN"
+      },
+      "events": 0
+    },
+    {
+      "second": 14,
+      "http_status": 200,
+      "connection": {
+        "mqtt": "CONNECTED",
+        "device": "UNKNOWN",
+        "synchronized": false
+      },
+      "slots": {
+        "P01": "UNKNOWN",
+        "P02": "UNKNOWN",
+        "P03": "UNKNOWN",
+        "P04": "UNKNOWN"
+      },
+      "events": 0
+    },
+    {
+      "second": 15,
+      "http_status": 200,
+      "connection": {
+        "mqtt": "CONNECTED",
+        "device": "UNKNOWN",
+        "synchronized": false
+      },
+      "slots": {
+        "P01": "UNKNOWN",
+        "P02": "UNKNOWN",
+        "P03": "UNKNOWN",
+        "P04": "UNKNOWN"
+      },
+      "events": 0
+    },
+    {
+      "second": 16,
+      "http_status": 200,
+      "connection": {
+        "mqtt": "CONNECTED",
+        "device": "UNKNOWN",
+        "synchronized": false
+      },
+      "slots": {
+        "P01": "UNKNOWN",
+        "P02": "UNKNOWN",
+        "P03": "UNKNOWN",
+        "P04": "UNKNOWN"
+      },
+      "events": 0
+    },
+    {
+      "second": 17,
+      "http_status": 200,
+      "connection": {
+        "mqtt": "CONNECTED",
+        "device": "UNKNOWN",
+        "synchronized": false
+      },
+      "slots": {
+        "P01": "UNKNOWN",
+        "P02": "UNKNOWN",
+        "P03": "UNKNOWN",
+        "P04": "UNKNOWN"
+      },
+      "events": 0
+    },
+    {
+      "second": 18,
+      "http_status": 200,
+      "connection": {
+        "mqtt": "CONNECTED",
+        "device": "UNKNOWN",
+        "synchronized": false
+      },
+      "slots": {
+        "P01": "UNKNOWN",
+        "P02": "UNKNOWN",
+        "P03": "UNKNOWN",
+        "P04": "UNKNOWN"
+      },
+      "events": 0
+    }
+  ],
+  "sqlite_slots": [
+    {
+      "slot_id": "P01",
+      "status": "UNKNOWN",
+      "received_at": null
+    },
+    {
+      "slot_id": "P02",
+      "status": "UNKNOWN",
+      "received_at": null
+    },
+    {
+      "slot_id": "P03",
+      "status": "UNKNOWN",
+      "received_at": null
+    },
+    {
+      "slot_id": "P04",
+      "status": "UNKNOWN",
+      "received_at": null
+    }
+  ],
+  "health": {
+    "status": "ok",
+    "database": "ok",
+    "phase": "MQTT_SUBSCRIBER",
+    "mqtt_enabled": true,
+    "websocket_enabled": false
+  },
+  "observed_connected": true,
+  "ingest_accepted": 0,
+  "ingest_rejected": 0,
+  "manual_integration": "NOT VERIFIED: no controlled Wokwi switch operations in this probe; ambient public MQTT is not proof of device provenance",
+  "server_and_lifespan_stopped": true
+}

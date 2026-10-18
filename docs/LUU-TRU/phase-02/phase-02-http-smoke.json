@@ -1,0 +1,120 @@
+{
+  "/health": {
+    "http_status": 200,
+    "body": {
+      "status": "ok",
+      "database": "ok",
+      "phase": "BACKEND_CORE",
+      "mqtt_enabled": false,
+      "websocket_enabled": false
+    }
+  },
+  "/api/parking/status": {
+    "http_status": 200,
+    "body": {
+      "schema_version": "1.0",
+      "source": "LIVE",
+      "timestamp": "2026-10-18T15:19:48.607749Z",
+      "slots": {
+        "P01": "UNKNOWN",
+        "P02": "UNKNOWN",
+        "P03": "UNKNOWN",
+        "P04": "UNKNOWN"
+      },
+      "gate": "CLOSED",
+      "gate_meta": {
+        "confirmed": false,
+        "confirmed_at": null,
+        "pending_command_id": null
+      },
+      "connection": {
+        "mqtt": "DISCONNECTED",
+        "device": "UNKNOWN",
+        "synchronized": false
+      },
+      "stream_id": "075de395-31c1-4c29-820a-2734210b5687",
+      "revision": 0,
+      "events": []
+    }
+  },
+  "/api/parking/slots": {
+    "http_status": 200,
+    "body": {
+      "schema_version": "1.0",
+      "stream_id": "075de395-31c1-4c29-820a-2734210b5687",
+      "revision": 0,
+      "slots": [
+        {
+          "slot_id": "P01",
+          "status": "UNKNOWN"
+        },
+        {
+          "slot_id": "P02",
+          "status": "UNKNOWN"
+        },
+        {
+          "slot_id": "P03",
+          "status": "UNKNOWN"
+        },
+        {
+          "slot_id": "P04",
+          "status": "UNKNOWN"
+        }
+      ]
+    }
+  },
+  "/api/parking/summary": {
+    "http_status": 200,
+    "body": {
+      "schema_version": "1.0",
+      "stream_id": "075de395-31c1-4c29-820a-2734210b5687",
+      "revision": 0,
+      "total": 4,
+      "occupied": 0,
+      "free": 0,
+      "unknown": 4,
+      "status": "UNKNOWN",
+      "full": false
+    }
+  },
+  "/api/parking/events": {
+    "http_status": 200,
+    "body": {
+      "schema_version": "1.0",
+      "stream_id": "075de395-31c1-4c29-820a-2734210b5687",
+      "revision": 0,
+      "events": []
+    }
+  },
+  "/api/parking/statistics": {
+    "http_status": 200,
+    "body": {
+      "schema_version": "1.0",
+      "stream_id": "075de395-31c1-4c29-820a-2734210b5687",
+      "revision": 0,
+      "scope": "DATABASE_LIFETIME",
+      "entries": 0,
+      "exits": 0,
+      "by_slot": {
+        "P01": 0,
+        "P02": 0,
+        "P03": 0,
+        "P04": 0
+      }
+    }
+  },
+  "/openapi.json": {
+    "http_status": 200,
+    "body": {
+      "title": "SmartParking Group 21 — Backend Core",
+      "paths": [
+        "/api/parking/events",
+        "/api/parking/slots",
+        "/api/parking/statistics",
+        "/api/parking/status",
+        "/api/parking/summary",
+        "/health"
+      ]
+    }
+  }
+}

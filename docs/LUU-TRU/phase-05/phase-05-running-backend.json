@@ -1,0 +1,31 @@
+{
+  "mode": "READ_ONLY_RUNNING_BACKEND",
+  "no_commands_sent": true,
+  "source": "LIVE",
+  "stream_id": "cffb6488-6a06-4953-b1af-4dfb582f1dac",
+  "revision": 2,
+  "slots": {
+    "P01": "UNKNOWN",
+    "P02": "UNKNOWN",
+    "P03": "UNKNOWN",
+    "P04": "UNKNOWN"
+  },
+  "gate": "CLOSED",
+  "gate_meta": {
+    "confirmed": false,
+    "confirmed_at": null,
+    "pending_command_id": null
+  },
+  "connection": {
+    "mqtt": "CONNECTED",
+    "device": "OFFLINE",
+    "synchronized": false
+  },
+  "event_count": 6,
+  "statistics": {
+    "entries": 1,
+    "exits": 1
+  },
+  "transport": "CONNECTED",
+  "physical_esp32_not_observed": true
+}

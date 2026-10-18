@@ -1,0 +1,271 @@
+{
+  "TV1": {
+    "name": "Huỳnh Đổ Hoàng Nguyên",
+    "mssv": "2001230582",
+    "role": "Device / ESP32 / Wokwi",
+    "file": "01_TV1_DEVICE.md",
+    "tech": "Arduino C++, ESP32, WiFi, PubSubClient, ESP32Servo, ArduinoJson, Wokwi",
+    "items": [
+      [
+        "Mô hình và đấu nối",
+        "ESP32, 4 slide switches, servo SG90; diagram.json có 6 parts và 11 connections.",
+        "Source và sơ đồ hiện có; chưa nghiệm thu phần cứng thật"
+      ],
+      [
+        "Ánh xạ GPIO",
+        "P01–P04 = 13/14/27/26; servo PWM = 18; V+ 5V và GND.",
+        "Đối chiếu diagram.json với SENSOR_PINS/SERVO_PIN"
+      ],
+      [
+        "Đọc trạng thái ô",
+        "INPUT_PULLUP; LOW → occupied=true, còn lại false.",
+        "Log người dùng có trạng thái P01–P04"
+      ],
+      [
+        "Chống dội công tắc",
+        "Debounce 400ms, cập nhật occupied và slotDirty khi giá trị ổn định thay đổi.",
+        "Log SENSOR P02/P03 do người dùng cung cấp"
+      ],
+      [
+        "Kết nối Wi-Fi",
+        "Wokwi-GUEST, retry theo RETRY_MS; không block bằng vòng chờ vô hạn trong loop.",
+        "Có log Wi-Fi CONNECTED; không đo SLA"
+      ],
+      [
+        "Publish MQTT ô đỗ",
+        "JSON device_id/slot_id/occupied boolean, đúng bốn topic; không retained.",
+        "Có log SLOT OK; publish OK chưa bảo đảm subscriber đã nhận"
+      ],
+      [
+        "Heartbeat và Last Will",
+        "Heartbeat online/uptime mỗi 10s mô phỏng; Will offline khi kết nối mất.",
+        "Backend đã nhận heartbeat và OFFLINE trong log"
+      ],
+      [
+        "Reconnect và timeout",
+        "Tự thử reconnect, subscribe gate/command, đánh dấu gửi lại bốn ô; socket timeout 3→15s.",
+        "Source đã cập nhật; kết nối public broker còn chập chờn"
+      ],
+      [
+        "Snapshot định kỳ",
+        "Sau mỗi heartbeat đánh dấu cả bốn ô dirty, gửi lại trạng thái GPIO hiện tại ở loop kế tiếp.",
+        "Source đã có; người dùng xác nhận test được sau chỉnh sửa"
+      ],
+      [
+        "Điều khiển servo",
+        "OPEN đặt 90°, CLOSE 0°; processServo chờ 700ms mô phỏng trước xếp ACK.",
+        "Log OPEN/OPENED có thật; quan sát cơ khí cuối cùng chưa có biên bản"
+      ],
+      [
+        "Validate lệnh",
+        "Kiểm tra topic, độ dài, JSON, command_id/action/direction, giới hạn ID 80 ký tự.",
+        "Đối chiếu source; không tự gọi mọi ca Device là đã chạy"
+      ],
+      [
+        "Chống trùng/busy và ACK",
+        "Nhớ lệnh hoàn tất gần nhất để re-ACK; busy trả ERROR; gửi gate/status qua hàng chờ ACK.",
+        "Không phải idempotency bền qua restart; chưa đủ test vật lý từng nhánh"
+      ]
+    ],
+    "evidence": [
+      "minh-chung/TV1/Rp-Tv1.md",
+      "minh-chung/TV1/README.md",
+      "minh-chung/CHUNG/XAC_NHAN_NGUOI_DUNG.md"
+    ]
+  },
+  "TV2": {
+    "name": "Bạch Ngọc Hợp",
+    "mssv": "2001230279",
+    "role": "Backend / tích hợp MQTT / SQLite / REST / WebSocket",
+    "file": "02_TV2_BACKEND.md",
+    "tech": "Python 3.11, FastAPI, Pydantic, SQLite stdlib, Paho MQTT, Uvicorn, AnyIO, pytest, HTTPX, websockets",
+    "items": [
+      [
+        "Audit và contract",
+        "Đối chiếu Device/Frontend, lập mapping, v1 và kế hoạch triển khai; contract do người dùng duyệt D01–D08.",
+        "integration-audit/contract; không tự nhận Backend có quyền phê duyệt"
+      ],
+      [
+        "App và cấu hình",
+        "App factory/lifespan, env, DB path theo backend/, CORS allowlist và lifecycle services.",
+        "app/main.py, config.py; tests đường dẫn và CORS"
+      ],
+      [
+        "SQLite schema",
+        "parking_slots, parking_events, gate_commands, gate_state, gate_ack_audit; seed 4 UNKNOWN.",
+        "database.py và core tests"
+      ],
+      [
+        "Migration/backup",
+        "Nâng v1→v2 có backup, giữ dữ liệu/history/sequence, migration transaction.",
+        "Test migration Phase 4 PASS"
+      ],
+      [
+        "State/KPI",
+        "EMPTY/OCCUPIED/UNKNOWN, available không tính UNKNOWN, FULL chỉ khi 4 OCCUPIED.",
+        "Core tests PASS"
+      ],
+      [
+        "Event/dedup",
+        "IN EMPTY→OCCUPIED; OUT OCCUPIED→EMPTY; baseline STATUS; không event trùng do replay.",
+        "Core/MQTT tests PASS"
+      ],
+      [
+        "Statistics/UTC",
+        "Bộ đếm từ full history, timestamp UTC server, phân biệt thời điểm nhận và commit snapshot.",
+        "Tests schema/consistency/timestamp PASS"
+      ],
+      [
+        "REST đọc",
+        "Health, status, slots, summary, events và statistics; response v1 và OpenAPI.",
+        "TestClient và HTTP smoke gốc"
+      ],
+      [
+        "Parser MQTT strict",
+        "Validate topic/device/slot mismatch, JSON boolean thật, retained/oversize/malformed reject.",
+        "50 MQTT tests trong bộ Phase 3"
+      ],
+      [
+        "Subscriber/queue",
+        "Paho lifecycle, callback→bounded queue→worker, epoch chống packet cũ, overflow thu hồi trust.",
+        "MQTT tests; runtime broker còn lỗi ngoài fixture"
+      ],
+      [
+        "Health/heartbeat",
+        "ONLINE/OFFLINE/UNKNOWN, heartbeat timeout 30s, Will và invalidate slot/gate trust.",
+        "Tests timeout/Will PASS; log runtime có các trạng thái"
+      ],
+      [
+        "Reconnect/baseline",
+        "Resubscribe, chờ baseline mới đủ 4 ô, giữ last-known và không nhân bản lượt xe.",
+        "Tests reconnect/dedup PASS; phụ thuộc Device republish"
+      ],
+      [
+        "WebSocket fanout",
+        "Initial full snapshot, nhiều client, bounded queues/send timeout, cleanup kết nối.",
+        "Hai-client, reconnect và 25 vòng đóng/mở test PASS"
+      ],
+      [
+        "Revision/stream",
+        "stream mới sau restart; command trước snapshot cùng revision, REST nguồn resync.",
+        "Tests thứ tự/schema và HTTP/WS fixture"
+      ],
+      [
+        "Gate request/persistence",
+        "Client command_id bắt buộc; persist PENDING trước publish, fingerprint/idempotency, một in-flight.",
+        "Tests duplicate/concurrency/conflict PASS"
+      ],
+      [
+        "Gate policy/publish",
+        "FULL/không đáng tin chặn ENTRY OPEN; EXIT không chặn chỉ vì FULL; MQTT QoS0/non-retained.",
+        "Tests FULL/UNKNOWN/EXIT/offline/publish fail PASS"
+      ],
+      [
+        "ACK/audit/timeout/restart",
+        "Match ID/target, CONFIRMED/ERROR/TIMEOUT, late ACK audit, không tự resend sau restart; env demo ACK=15s.",
+        "Có ACK thực đến muộn và TIMEOUT; unit PASS không thay servo E2E"
+      ],
+      [
+        "Tests và hướng dẫn",
+        "24 core + 50 MQTT + 29 realtime/gate = 103 tests ở Phase 4; lockfile, env mẫu, README.",
+        "Log 103 PASS/1 warning; chưa có security audit Python đầy đủ"
+      ]
+    ],
+    "evidence": [
+      "minh-chung/TV2/phase-02-backend-core-report.md",
+      "minh-chung/TV2/phase-03-mqtt-report.md",
+      "minh-chung/TV2/phase-04-realtime-gate-report.md",
+      "minh-chung/TV2/phase-04-pytest.log"
+    ]
+  },
+  "TV3": {
+    "name": "Bùi Tấn Phước",
+    "mssv": "2001230696",
+    "role": "Frontend / React / Spline / adapter LIVE",
+    "file": "03_TV3_FRONTEND.md",
+    "tech": "React 18, JavaScript JSX, Vite 6.4.4, Spline Runtime 2.0.93, Recharts, Lucide, CSS, Fetch, WebSocket, Node test runner",
+    "items": [
+      [
+        "Giao diện và tab",
+        "Tổng quan, quản lý ô, lịch sử, thống kê; điều hướng trong Dashboard.",
+        "Source App.jsx và xác nhận người dùng trước"
+      ],
+      [
+        "KPI/FULL/UNKNOWN",
+        "Total/occupied/available/unknown; UNKNOWN không tính free, FULL khi đủ 4 xe.",
+        "DEMO tests và UI đã xác nhận"
+      ],
+      [
+        "Mock DEMO",
+        "Service độc lập, click ô/UNKNOWN/RESET, refresh mở phiên mới.",
+        "5 tests mock PASS, không phụ thuộc Backend"
+      ],
+      [
+        "Store/contract",
+        "Snapshot bất biến và ổn định, subscribe/useSyncExternalStore, schema 1.0 và UTC.",
+        "Tests validator/immutability PASS"
+      ],
+      [
+        "History/chart",
+        "Bảng IN/OUT/STATUS/GATE, bộ đếm và Recharts theo cùng events.",
+        "Người dùng xác nhận cập nhật theo thao tác"
+      ],
+      [
+        "Scene loading/diagnostics",
+        "Scene URL giữ nguyên; 12 object checks, error boundary, loading/error rõ.",
+        "Scene 12/12 trong bằng chứng Phase 5"
+      ],
+      [
+        "Đồng bộ xe/màu",
+        "Car_P01–P04 hiện/ẩn; Slot EMPTY/OCCUPIED/UNKNOWN theo dữ liệu.",
+        "5 tình huống DEMO do người dùng xác nhận; không suy mọi vật liệu đã QA"
+      ],
+      [
+        "Barrier trục Y",
+        "Cố định Y, mở góc gốc +90°, đóng khôi phục gốc; không cộng dồn góc.",
+        "Source App.jsx đã có; không coi ACK là bằng chứng cơ khí"
+      ],
+      [
+        "Mode và env",
+        "Giữ DEMO/LIVE, cấu hình REST/WS URL bằng Vite env; LIVE khóa mô phỏng/reset.",
+        "parkingStore.js/.env.example và UI LIVE"
+      ],
+      [
+        "Adapter REST",
+        "GET full snapshot, validate data, thay store mà không replay mock events.",
+        "Tests LIVE và đọc Backend thật ở Phase 5"
+      ],
+      [
+        "Realtime/reconnect",
+        "WS envelopes, revision riêng theo loại, stream đổi, stale/backoff/REST resync.",
+        "Tests đảo/trùng revision và command/snapshot cùng revision"
+      ],
+      [
+        "Gate UI",
+        "ENTRY/EXIT bắt buộc; UUID, POST Gate API, pending/error/timeout, GET recovery và retry có chủ đích.",
+        "Tests fixture; servo thực tế chưa đủ biên bản E2E"
+      ],
+      [
+        "Refresh và dữ liệu",
+        "LIVE refresh lấy lại DB snapshot; history/totals không reset như DEMO, request giữ sessionStorage nếu được phép.",
+        "Browser refresh/fixture test đã có bằng chứng"
+      ],
+      [
+        "Sửa lỗi pending/404",
+        "Đã áp dụng phân biệt DEVICE_UNAVAILABLE và chặn offline; bản dừng polling 404 đã chuẩn bị nhưng chưa có trong source F lúc kiểm tra.",
+        "Rà source F xác nhận 503 có, nhánh if(error.http===404) chưa có"
+      ],
+      [
+        "Tests/build/audit/docs",
+        "5 tests DEMO đầu; 21 tests trong Phase 5, build DEMO/LIVE và audit online; tài liệu setup và tổng hợp.",
+        "Không cộng các lần regression thành số tests độc lập; QA tablet còn giới hạn"
+      ]
+    ],
+    "evidence": [
+      "minh-chung/TV3/Rp-Tv3_CongNgheSuDung_TienDO.md",
+      "minh-chung/TV3/phase-05-frontend-live-report.md",
+      "minh-chung/TV3/phase-05-tests.log",
+      "minh-chung/TV3/phase-05-build-live.log"
+    ]
+  }
+}

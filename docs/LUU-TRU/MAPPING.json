@@ -1,0 +1,202 @@
+[
+  {
+    "Source": "docs\\backend-implementation-plan.md",
+    "Destination": "docs\\LUU-TRU\\ke-hoach-cu\\backend-implementation-plan.md",
+    "SHA256": "fa94b7d13a7a82f6fa9daafa4726e49f0b0de2a792c7355f82c51fd13de09242"
+  },
+  {
+    "Source": "docs\\copy-checksums.csv",
+    "Destination": "docs\\LUU-TRU\\kiem-tra-workspace\\copy-checksums.csv",
+    "SHA256": "32ebd96729c247e1783331f198b7e2f263bcb8490b5ebb2f1dd10acbc5a83f9d"
+  },
+  {
+    "Source": "docs\\copy-summary.json",
+    "Destination": "docs\\LUU-TRU\\kiem-tra-workspace\\copy-summary.json",
+    "SHA256": "7972a0e6e6cec24d4b1fb3ab609fff35a8d97bbbca93ba785d289c0e7cd46197"
+  },
+  {
+    "Source": "docs\\frontend-build.log",
+    "Destination": "docs\\LUU-TRU\\kiem-tra-workspace\\frontend-build.log",
+    "SHA256": "ec52ef12fdab527b3878a2e71befaf537d91eb98d52bb4946a3f8baf2a08ec7c"
+  },
+  {
+    "Source": "docs\\frontend-test.log",
+    "Destination": "docs\\LUU-TRU\\kiem-tra-workspace\\frontend-test.log",
+    "SHA256": "14fb93d97917f41e7721048d44c823d45012a0b799277885e2c7c264eef5be1c"
+  },
+  {
+    "Source": "docs\\integration-audit.md",
+    "Destination": "docs\\LUU-TRU\\ke-hoach-cu\\integration-audit.md",
+    "SHA256": "2586fd15c7221728a70726cb321f6f16cb23cdaf072ca1a1bb46a89bb9ee5ec7"
+  },
+  {
+    "Source": "docs\\integration-plan.md",
+    "Destination": "docs\\LUU-TRU\\ke-hoach-cu\\integration-plan.md",
+    "SHA256": "b93fa11e5f752b5f85e305b63eb617e613090269e18411530fbf65f60afd85ca"
+  },
+  {
+    "Source": "docs\\live-dashboard.png",
+    "Destination": "docs\\LUU-TRU\\phase-05\\live-dashboard.png",
+    "SHA256": "44a262d0058332e7656d4c8cb80ffa768922e0e87af1866b33bb258a82a5d371"
+  },
+  {
+    "Source": "docs\\NOI_DUNG_BAO_CAO_TV1_TV3.md",
+    "Destination": "docs\\LUU-TRU\\ke-hoach-cu\\NOI_DUNG_BAO_CAO_TV1_TV3.md",
+    "SHA256": "4ba7c6dc577627a64d412728b33b80706144f587ab1d6ea650d7f58fa6f0a1e4"
+  },
+  {
+    "Source": "docs\\phase-02-backend-core-report.md",
+    "Destination": "docs\\LUU-TRU\\phase-02\\phase-02-backend-core-report.md",
+    "SHA256": "f172ddef47baad62cd5bbb1f6de205fb66dacf6dda5c1d4e2fb8d125881c06e7"
+  },
+  {
+    "Source": "docs\\phase-02-http-smoke.json",
+    "Destination": "docs\\LUU-TRU\\phase-02\\phase-02-http-smoke.json",
+    "SHA256": "4eb2d240ce711f7246d2155a60ecccc0f95ba3f7214ec4114605427adfd368e0"
+  },
+  {
+    "Source": "docs\\phase-02-protected-checksums.json",
+    "Destination": "docs\\LUU-TRU\\phase-02\\phase-02-protected-checksums.json",
+    "SHA256": "841ce5a50453f3f34d3061163ad10fd90a64d4e9ac82b9269e6c6712c24442b6"
+  },
+  {
+    "Source": "docs\\phase-02-pytest.log",
+    "Destination": "docs\\LUU-TRU\\phase-02\\phase-02-pytest.log",
+    "SHA256": "ffd43f389e97a769c372c39e01e64e7862ac65c732a7e71b3d46aeb4dde3507e"
+  },
+  {
+    "Source": "docs\\phase-02-pytest.xml",
+    "Destination": "docs\\LUU-TRU\\phase-02\\phase-02-pytest.xml",
+    "SHA256": "059bf6e8fd608d67df880ca8f1c7bd8f1af1432fcced630632f3c31c01f420f4"
+  },
+  {
+    "Source": "docs\\phase-02-uvicorn.log",
+    "Destination": "docs\\LUU-TRU\\phase-02\\phase-02-uvicorn.log",
+    "SHA256": "5c2c626376c2f36c71088e5ee5e856e586c9480330552845c578bc49f4fff0a6"
+  },
+  {
+    "Source": "docs\\phase-03-live-probe.json",
+    "Destination": "docs\\LUU-TRU\\phase-03\\phase-03-live-probe.json",
+    "SHA256": "c8333248862098c719025c8e099fa31990628d77683967ebddfbf422e55e1369"
+  },
+  {
+    "Source": "docs\\phase-03-live-probe.log",
+    "Destination": "docs\\LUU-TRU\\phase-03\\phase-03-live-probe.log",
+    "SHA256": "81446621f246d33b00c959b38b0044c2f246a7e53571cfa7219550f68131fc2f"
+  },
+  {
+    "Source": "docs\\phase-03-manual-test.md",
+    "Destination": "docs\\LUU-TRU\\phase-03\\phase-03-manual-test.md",
+    "SHA256": "2a1afc7f569999485b4e05a4b803f68f72fdcc70cc4cb7e30d010dd32e3e4b42"
+  },
+  {
+    "Source": "docs\\phase-03-mqtt-report.md",
+    "Destination": "docs\\LUU-TRU\\phase-03\\phase-03-mqtt-report.md",
+    "SHA256": "635333dd750212732cf20bf487f45963bfdddfe488ae2a61d727518616b8f52c"
+  },
+  {
+    "Source": "docs\\phase-03-protected-checksums.json",
+    "Destination": "docs\\LUU-TRU\\phase-03\\phase-03-protected-checksums.json",
+    "SHA256": "5529409d8eba0cd8ed8a55e557f113d7146a7a933f43e2ac5210eae20de37ffe"
+  },
+  {
+    "Source": "docs\\phase-03-pytest.log",
+    "Destination": "docs\\LUU-TRU\\phase-03\\phase-03-pytest.log",
+    "SHA256": "0e1d5cd4c109337032394d67969d885a0db26a77f600b56119716be6805ba770"
+  },
+  {
+    "Source": "docs\\phase-03-pytest.xml",
+    "Destination": "docs\\LUU-TRU\\phase-03\\phase-03-pytest.xml",
+    "SHA256": "cabe2ebc119f50f88d1d0ebd991b31ef4245206470f7896d54604cf249bfd171"
+  },
+  {
+    "Source": "docs\\phase-04-http-ws-smoke.json",
+    "Destination": "docs\\LUU-TRU\\phase-04\\phase-04-http-ws-smoke.json",
+    "SHA256": "ddb1cc626325b7696613f17e782b8fb3f1e06c06396707a642a3c8906ea6493e"
+  },
+  {
+    "Source": "docs\\phase-04-http-ws-smoke.log",
+    "Destination": "docs\\LUU-TRU\\phase-04\\phase-04-http-ws-smoke.log",
+    "SHA256": "87f9e97dcaa6fd1daad8eaabcc31a7c2f846068f08c9888d5f167904e3aeedfc"
+  },
+  {
+    "Source": "docs\\phase-04-installation.json",
+    "Destination": "docs\\LUU-TRU\\phase-04\\phase-04-installation.json",
+    "SHA256": "14112e0c702ec82aaf2763c72f346028a38495949dd0ec8d016e4c9995afcb12"
+  },
+  {
+    "Source": "docs\\phase-04-manual-test.md",
+    "Destination": "docs\\LUU-TRU\\phase-04\\phase-04-manual-test.md",
+    "SHA256": "790f3189f234ba1269e46ee63346d4a11c77c41396beadbb2219f3b2cee4995d"
+  },
+  {
+    "Source": "docs\\phase-04-pytest.log",
+    "Destination": "docs\\LUU-TRU\\phase-04\\phase-04-pytest.log",
+    "SHA256": "93665d278aac93f2a074a3f9c0c6381279355aaa01a509220daf67bfe3a1e94d"
+  },
+  {
+    "Source": "docs\\phase-04-pytest.xml",
+    "Destination": "docs\\LUU-TRU\\phase-04\\phase-04-pytest.xml",
+    "SHA256": "37475b20d8f98fc654478d44607722251dcc6b6af6f76d3e502d086e0a365837"
+  },
+  {
+    "Source": "docs\\phase-04-realtime-gate-report.md",
+    "Destination": "docs\\LUU-TRU\\phase-04\\phase-04-realtime-gate-report.md",
+    "SHA256": "41fd325b74f01a2864bac1f003dcd1837107f2b308f2852c8016b845a4f80f8e"
+  },
+  {
+    "Source": "docs\\phase-05-audit-offline.json",
+    "Destination": "docs\\LUU-TRU\\phase-05\\phase-05-audit-offline.json",
+    "SHA256": "2f4a5e2e8eeae9e46e01a41394c65047a1f0e4241746823555d7624b60d266ce"
+  },
+  {
+    "Source": "docs\\phase-05-audit.json",
+    "Destination": "docs\\LUU-TRU\\phase-05\\phase-05-audit.json",
+    "SHA256": "2f4a5e2e8eeae9e46e01a41394c65047a1f0e4241746823555d7624b60d266ce"
+  },
+  {
+    "Source": "docs\\phase-05-build-demo.log",
+    "Destination": "docs\\LUU-TRU\\phase-05\\phase-05-build-demo.log",
+    "SHA256": "d07b53db0402998448203cf81a6bcade268947c57286bccff9def3a7639fa7f3"
+  },
+  {
+    "Source": "docs\\phase-05-build-live.log",
+    "Destination": "docs\\LUU-TRU\\phase-05\\phase-05-build-live.log",
+    "SHA256": "1fdb6f4d344355a558045b1f204f15019fd3203584ea8573b3cffb36ed4683e3"
+  },
+  {
+    "Source": "docs\\phase-05-frontend-live-report.md",
+    "Destination": "docs\\LUU-TRU\\phase-05\\phase-05-frontend-live-report.md",
+    "SHA256": "6ea0d1ee0e294d2bab4c8448a42666ff3a644dab49f86df044dd87bf692bbee7"
+  },
+  {
+    "Source": "docs\\phase-05-manual-test.md",
+    "Destination": "docs\\LUU-TRU\\phase-05\\phase-05-manual-test.md",
+    "SHA256": "191411fc14470da91219c7535c5af32fb27309145a91053ff8afbebf5728ed88"
+  },
+  {
+    "Source": "docs\\phase-05-network-fixture.log",
+    "Destination": "docs\\LUU-TRU\\phase-05\\phase-05-network-fixture.log",
+    "SHA256": "395c3c3be6ee698675e095761b68e74dedc46798d8563a8144c5e9106d3c2350"
+  },
+  {
+    "Source": "docs\\phase-05-running-backend.json",
+    "Destination": "docs\\LUU-TRU\\phase-05\\phase-05-running-backend.json",
+    "SHA256": "cb8d2b1feb348678c3c630aff5f069775d1c707df0fad54ac1cb71dbb2655536"
+  },
+  {
+    "Source": "docs\\phase-05-tests.log",
+    "Destination": "docs\\LUU-TRU\\phase-05\\phase-05-tests.log",
+    "SHA256": "b254cfaa7442c512a6668474e3446b24bbb0adfaa7d24c93ea8537d428ffee73"
+  },
+  {
+    "Source": "docs\\progress.md",
+    "Destination": "docs\\LUU-TRU\\ke-hoach-cu\\progress.md",
+    "SHA256": "3acecd65cb60b22acfb5e2b3fa4c4bdd0524406091358afe5955cff45e80d782"
+  },
+  {
+    "Source": "docs\\validation.log",
+    "Destination": "docs\\LUU-TRU\\kiem-tra-workspace\\validation.log",
+    "SHA256": "877fd09c69b8c49d4d12476e239abc94a7713fc64cf62ce921687f59004cc08e"
+  }
+]
