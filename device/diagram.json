@@ -1,0 +1,64 @@
+
+{
+  "version": 1,
+  "author": "Smart Parking - Huỳnh Đổ Hoàng Nguyên",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-slide-switch",
+      "id": "p01",
+      "top": -130,
+      "left": -230,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-slide-switch",
+      "id": "p02",
+      "top": -50,
+      "left": -230,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-slide-switch",
+      "id": "p03",
+      "top": 30,
+      "left": -230,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-slide-switch",
+      "id": "p04",
+      "top": 110,
+      "left": -230,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo1",
+      "top": -110,
+      "left": 260,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    ["p01:2", "esp:13", "green", []],
+    ["p01:1", "esp:GND.1", "black", []],
+    ["p02:2", "esp:14", "green", []],
+    ["p02:1", "esp:GND.1", "black", []],
+    ["p03:2", "esp:27", "green", []],
+    ["p03:1", "esp:GND.1", "black", []],
+    ["p04:2", "esp:26", "green", []],
+    ["p04:1", "esp:GND.1", "black", []],
+    ["servo1:PWM", "esp:18", "orange", []],
+    ["servo1:V+", "esp:5V", "red", []],
+    ["servo1:GND", "esp:GND.2", "black", []]
+  ],
+  "dependencies": {}
+}

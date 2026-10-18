@@ -1,0 +1,22 @@
+[
+  {
+    "Module": "device",
+    "Source": "C:\\Users\\Admin\\Documents\\Codex\\2026-10-18\\SmartParking",
+    "Destination": "C:\\Users\\Admin\\Documents\\Codex\\2026-10-18\\files-mentioned-by-the-user-codex\\outputs\\SmartParking-Group21\\device",
+    "SourceFiles": 4,
+    "CopiedFiles": 4,
+    "SourceBytes": 12383,
+    "CopiedBytes": 12383.0,
+    "Mismatches": 0
+  },
+  {
+    "Module": "frontend",
+    "Source": "C:\\Users\\Admin\\Documents\\Codex\\2026-10-18\\files-mentioned-by-the-user-codex\\outputs\\smart-parking-dashboard-fixed",
+    "Destination": "C:\\Users\\Admin\\Documents\\Codex\\2026-10-18\\files-mentioned-by-the-user-codex\\outputs\\SmartParking-Group21\\frontend",
+    "SourceFiles": 9358,
+    "CopiedFiles": 9358,
+    "SourceBytes": 155367396,
+    "CopiedBytes": 155367396.0,
+    "Mismatches": 0
+  }
+]
